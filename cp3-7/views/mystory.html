@@ -1,0 +1,23 @@
+<div class="firstMenu container-fluid" ng-controller="NavCtrl">
+    <div class="row" style="margin:0; ">
+        <div class="logoCp col-sm-2">Cognizant</div>
+            <div class="col-sm-10 menuCp">
+                <ul>
+                    <li ng-repeat="item in items" ng-class="{active: isActive(item)}"><a href="#{{item.path}}"><i class="fa fa-{{item.iconMenu}}"></i>{{item.title}}</a></li>
+                </ul>
+            </div>
+        </div>
+</div>
+<div class="container mainContent">
+ <p>Hi, there! I'm Chandu! I'm the guy you see in the photo. This is my webpage where you can find more things about me!</p>
+
+ <p>I'm from Hyderabad and i love technology!</p>
+
+ <p>Currently, I'm a Senior developer SitePoint, TutsPlus, and Awwwards.</p>
+
+ <p>I love experiment with web technologies. Find my experiments on Codepen and on Github.</p>
+
+ <p>Want to know more about me? Check the other links of my site where you can see my interests, my studies and various photos from my life!</p>
+</div>
+
+<footer>Copyrights 2015</footer>

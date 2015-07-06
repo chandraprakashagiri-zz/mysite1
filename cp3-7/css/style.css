@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+input[type="number"]{
+    -moz-appearance:none !important;
+  -webkit-appearance:none !important;
+    appearance: none !important;
+}
+a,button{
+outline: none !important;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: trebuchet MS,Georgia;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a{
+  text-decoration: none !important;
+}
+.firstMenu ul{
+float: right;
+}
+.menuBarLinks{
+    display: inline-block;
+    padding: 10px;
+}
+header{
+  text-align: center;
+  background-color: transparent;
+  background: #4F8EF7;
+  width: 100%;
+  padding: 10px;
+  color: white;
+
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: transparent;
+  background: #4F8EF7;
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+}
+.firstMenu ul{
+  list-style-type: none;
+  width: 100%;
+  text-align: right;
+}
+.firstMenu li{
+  display: inline-block;
+    padding: 10px;
+    color: white;
+}
+.firstMenu li a{
+    color: white;
+}
+/*.firstMenu li:hover{
+border-bottom: 5px solid rgb(202, 215, 223);
+margin-bottom: -5px;
+color: rgb(249, 255, 246);
+}*/
+.active{
+border-bottom: 5px solid rgb(202, 215, 223); 
+}
+.menuCp{
+float: right;
+}
+.mainContent{
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+}
+.logoCp{
+line-height: 40px;
+  font-size: 25px;
+  color: white;
+  font-family: monospace;
+}
+.firstMenu{
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  background: rgb(79, 142, 247);
+}
+.firstMenu .fa{
+margin-right: 5px;
+}
+/*
+#slides_control > div{
+  height: 200px;
+}
+*/
+/*
+img{
+  margin:auto;
+  width: 400px;
+}
+*/
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+
+.socialIcons li{
+display: inline-block;
+    padding: 0 10px;
+}
+.socialIcons img{
+width: 45px;
+}
+.socialIcons{
+    position: absolute;
+  bottom: 50px;
+  text-align: center;
+    width: 100%;
+}
+.contactForm{
+  padding-top: 5%;
+      max-width: 600px;
+}
+.contactForm h3{
+    text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: rebeccapurple;
+  margin-bottom: 20px;
+}
+.contactForm input, #commentsUser{
+margin-top: 10px;
+}
+.phoneNo{
+text-align: center;
+font-family: sans-serif;
+margin-top: 2%;
+    font-size: 16px;
+    color: rebeccapurple;
+}
+.liveChat{
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+/*
+.skypeIcon{
+  background-image: url(../images/skype.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  padding: 10px 10px 10px 20px;
+}
+*/
+
+/* meadia querie for mobile view....
+
+@media screen and (max-width: 420px) {
+    .firstMenu li{
+        display: inherit;
+    }
+    .firstMenu{
+    background-color: white;
+    }
+    .firstMenu ul{
+        text-align: left;
+        background-color: transparent;
+  background: rgb(79, 142, 247);
+    }
+    .menuCp{
+        float: left;
+    }
+    .logoCp{
+        text-align: center;
+        background-color: transparent;
+  background: rgb(79, 142, 247);
+    }
+    .active{
+        border-bottom: none; 
+}
+    footer{
+    display: none;
+    }
+}*/
+
+
+.fragmentWrapper {
+    overflow: hidden;
+}
+
+.fragment {
+    position: relative;
+    -moz-transition-property: left;
+    -o-transition-property: left;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s
+}
+
+.fragment:not(.active) {
+    left: 540px;
+}
+
+.fragment.active {
+    left: 0px;
+}
+
+
+
+
